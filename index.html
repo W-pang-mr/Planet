@@ -22,8 +22,6 @@
     background:linear-gradient(90deg,#4fa8ff,#ff5cf0); -webkit-background-clip:text; background-clip:text; color:transparent; }
   .subtitle { color:#8a99ad; font-size:13px; margin-bottom:16px; text-align:center; }
 
-  .status-pill { font-size:12px; font-weight:700; padding:4px 10px; border-radius:12px; background:#12161f; border:1px solid #24303f; margin-bottom:8px; }
-
   .topbar { display:flex; justify-content:space-between; align-items:center; width:100%; max-width:420px; margin-bottom:10px; }
   .token-pill, .rank-pill { display:flex; align-items:center; gap:6px; background:#12161f; border:1px solid #24303f;
     border-radius:999px; padding:8px 14px; font-weight:700; font-size:14px; }
@@ -31,7 +29,7 @@
 
   .modepick { display:flex; align-items:center; justify-content:center; gap:14px; margin:18px 0; width:100%; }
   .mode-arrow { width:44px; height:44px; border-radius:50%; background:#12161f; border:1px solid #24303f;
-    display:flex; align-items:center; justify-content:center; font-size:20px; color:#4fa8ff; cursor:pointer; }
+    display:flex; align-items:center; justify-content:center; font-size:20px; color:#4fa8ff; }
   .mode-card { width:200px; height:200px; border-radius:50%; background:radial-gradient(circle at 35% 30%,#1c2635,#090c11);
     border:2px solid #2a3a4d; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; }
   .mode-card .emoji { font-size:52px; }
@@ -40,7 +38,7 @@
   .mode-card.disabled { opacity:.45; }
 
   button.btn { background:linear-gradient(135deg,#4fa8ff,#3d7fc9); color:#fff; border:none; border-radius:14px;
-    padding:14px 20px; font-size:16px; font-weight:700; width:100%; max-width:380px; box-shadow:0 6px 16px rgba(79,168,255,.3); cursor:pointer; }
+    padding:14px 20px; font-size:16px; font-weight:700; width:100%; max-width:380px; box-shadow:0 6px 16px rgba(79,168,255,.3); }
   button.btn:active { transform:scale(.97); }
   button.btn.secondary { background:#161f2b; box-shadow:none; border:1px solid #2c3d52; color:#cfe0f2; margin-top:10px; }
   button.btn:disabled { opacity:.4; }
@@ -51,7 +49,7 @@
   /* Items screen */
   .section-title { align-self:flex-start; font-weight:800; font-size:15px; margin:14px 2px 8px; width:100%; max-width:420px; }
   .skin-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; width:100%; max-width:420px; }
-  .skin-card { background:#0e131b; border:2px solid #22303f; border-radius:14px; padding:10px; text-align:center; position:relative; cursor:pointer; }
+  .skin-card { background:#0e131b; border:2px solid #22303f; border-radius:14px; padding:10px; text-align:center; position:relative; }
   .skin-card.equipped { border-color:#7ee787; }
   .skin-avatar { width:64px; height:64px; border-radius:50%; margin:0 auto 6px; }
   .skin-tag { font-size:9px; font-weight:800; padding:2px 6px; border-radius:999px; display:inline-block; margin-top:4px; }
@@ -72,13 +70,7 @@
   .lootbox-name { font-weight:800; font-size:15px; }
   .lootbox-supply { font-size:11px; color:#8a99ad; margin-top:2px; }
   .lootbox-buy { background:linear-gradient(135deg,#ffd700,#ff9d00); color:#3a2400; font-weight:800;
-    border:none; border-radius:10px; padding:8px 14px; font-size:13px; white-space:nowrap; cursor:pointer; }
-
-  /* Market UI */
-  .market-list { display:flex; flex-direction:column; gap:10px; width:100%; max-width:420px; }
-  .market-item { background:#0e131b; border:1px solid #22303f; border-radius:14px; padding:12px; display:flex; align-items:center; justify-content:space-between; }
-  .market-info { display:flex; align-items:center; gap:10px; }
-  .market-seller { font-size:11px; color:#8a99ad; }
+    border:none; border-radius:10px; padding:8px 14px; font-size:13px; white-space:nowrap; }
 
   /* Perks screen */
   .perk-card { background:#0e131b; border:1px solid #22303f; border-radius:16px; padding:14px; width:100%; max-width:420px; margin-bottom:12px; }
@@ -90,14 +82,14 @@
   .perk-upgrade { display:flex; justify-content:space-between; align-items:center; }
   .perk-cost { font-size:13px; color:#ffd766; font-weight:700; }
   .perk-btn { background:linear-gradient(135deg,#4fa8ff,#3d7fc9); border:none; border-radius:10px; color:#fff;
-    font-weight:700; padding:8px 16px; font-size:13px; cursor:pointer; }
+    font-weight:700; padding:8px 16px; font-size:13px; }
   .perk-btn:disabled { opacity:.35; }
 
   /* bottom nav */
   #bottomnav { position:absolute; left:0; right:0; bottom:0; height:64px; display:flex;
     background:#0a0d12; border-top:1px solid #1c2530; z-index:20; }
   .nav-btn { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
-    color:#5c6b7d; font-size:10px; cursor:pointer; }
+    color:#5c6b7d; font-size:10px; }
   .nav-btn.active { color:#4fa8ff; }
   .nav-btn .nav-icon { font-size:20px; }
 
@@ -106,9 +98,9 @@
     font-size:14px; color:#cfe0f2; pointer-events:none; z-index:5; }
   #hud b { color:#4fa8ff; }
   #back-btn { position:absolute; top:12px; left:12px; z-index:8; background:rgba(255,255,255,.08); border:none;
-    color:#fff; border-radius:10px; padding:6px 10px; font-size:13px; cursor:pointer; }
+    color:#fff; border-radius:10px; padding:6px 10px; font-size:13px; }
   #split-btn { position:absolute; bottom:26px; right:20px; width:78px; height:78px; border-radius:50%;
-    background:rgba(79,168,255,.25); border:2px solid #4fa8ff; color:#fff; font-weight:800; font-size:13px; z-index:8; cursor:pointer; }
+    background:rgba(79,168,255,.25); border:2px solid #4fa8ff; color:#fff; font-weight:800; font-size:13px; z-index:8; }
   #split-btn:disabled { opacity:.35; border-color:#48607a; }
   #joystick-base { position:absolute; width:120px; height:120px; border-radius:50%;
     background:rgba(255,255,255,0.06); border:2px solid rgba(255,255,255,0.15); display:none; z-index:6; }
@@ -130,15 +122,14 @@
       <div class="rank-pill">🏅 <span id="home-rank">1</span></div>
     </div>
     <h1 class="title">🪐 سیاره‌خور</h1>
-    <div class="status-pill" id="net-status">🔄 در حال بررسی شبکه...</div>
     <p class="subtitle">دون‌ها رو بخور، بزرگ شو، مراقب سیاره‌های بزرگ‌تر باش</p>
 
     <div class="modepick">
       <button class="mode-arrow" id="mode-prev">◀</button>
       <div class="mode-card" id="mode-card">
-        <div class="emoji" id="mode-emoji">🌐</div>
-        <div class="modename" id="mode-name">آنلاین واقعی</div>
-        <div class="modesub" id="mode-sub">بازی همزمان با بقیه</div>
+        <div class="emoji" id="mode-emoji">🤖</div>
+        <div class="modename" id="mode-name">هوش مصنوعی</div>
+        <div class="modesub" id="mode-sub">۱۰ ربات حریف</div>
       </div>
       <button class="mode-arrow" id="mode-next">▶</button>
     </div>
@@ -146,13 +137,9 @@
     <button class="btn" id="play-btn">▶ شروع بازی</button>
   </div>
 
-  <!-- MARKET -->
+  <!-- MARKET (soon) -->
   <div class="screen hidden" id="screen-market">
-    <h1 class="title">🛒 مارکت اسکین‌ها</h1>
-    <p class="subtitle">خرید و فروش زنده اسکین بین کاربران</p>
-    <div class="market-list" id="market-list">
-      <div style="text-align:center; color:#8a99ad; margin-top:20px;">در حال بارگذاری آگهی‌ها...</div>
-    </div>
+    <div class="soon-box"><div class="big">🛒</div><h1 class="title">مارکت</h1><p class="subtitle">به زودی...</p></div>
   </div>
 
   <!-- SOON -->
@@ -252,33 +239,20 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
 
-  const netStatusEl = document.getElementById('net-status');
-  db.ref('.info/connected').on('value', snap => {
-    if (snap.val() === true) {
-      netStatusEl.style.color = '#7ee787';
-      netStatusEl.textContent = '🟢 متصل به سرور آنلاین';
-    } else {
-      netStatusEl.style.color = '#ff5c5c';
-      netStatusEl.textContent = '🔴 قطع اتصال (سرور / فیلترینگ)';
-    }
-  });
-
   /* ---------- identify user ---------- */
   const LS = {
     get(k,d){ try{ const v=localStorage.getItem(k); return v===null?d:JSON.parse(v); }catch(e){return d;} },
     set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
   };
-  let uid, displayName, telegramUsername;
+  let uid, displayName;
   const tgUser = tg && tg.initDataUnsafe && tg.initDataUnsafe.user;
   if (tgUser && tgUser.id) {
     uid = 'tg_' + tgUser.id;
     displayName = tgUser.first_name || 'بازیکن';
-    telegramUsername = tgUser.username ? tgUser.username.replace('@','').toLowerCase() : uid;
   } else {
     uid = LS.get('pe_local_uid', null);
     if (!uid) { uid = 'local_' + Math.random().toString(36).slice(2,10); LS.set('pe_local_uid', uid); }
     displayName = 'بازیکن';
-    telegramUsername = uid;
   }
 
   const SKIN_DB = {
@@ -302,12 +276,11 @@
   const TAG_CLASS = { starter:'tag-starter', common:'tag-common', rare:'tag-rare', epic:'tag-epic', legend:'tag-legend' };
   const TAG_LABEL = { starter:'شروع', common:'Common', rare:'Rare', epic:'Epic', legend:'Legend' };
 
-  let profile = null;
+  let profile = null; // live mirror of DB user data
 
   function defaultProfile(){
     return {
       name: displayName,
-      username: telegramUsername,
       tokens: 0,
       bestMass: 0,
       equippedSkin: 'dead_star',
@@ -317,30 +290,31 @@
   }
 
   const userRef = db.ref('users/' + uid);
-  userRef.on('value', snap => {
+  userRef.once('value').then(snap => {
     if (!snap.exists()) {
       profile = defaultProfile();
       userRef.set(profile);
     } else {
       profile = snap.val();
-      profile.username = telegramUsername;
-      userRef.child('username').set(telegramUsername);
       if (!profile.inventory) profile.inventory = { skins:{ dead_star:{tag:'starter'} } };
       if (!profile.inventory.skins || !profile.inventory.skins.dead_star) {
         profile.inventory.skins = profile.inventory.skins || {};
         profile.inventory.skins.dead_star = { tag:'starter' };
+        userRef.child('inventory/skins/dead_star').set({ tag:'starter' });
       }
       if (!profile.perks) profile.perks = { splitCooldownLevel:0, speedLevel:0 };
       if (!profile.equippedSkin) profile.equippedSkin = 'dead_star';
     }
+    renderAll();
+  }).catch(err => {
+    console.error('Firebase read error', err);
+    profile = defaultProfile();
     renderAll();
   });
 
   function saveField(path, value){
     if (uid) userRef.child(path).set(value).catch(e=>console.error('save error', path, e));
   }
-
-  function notify(msg){ if (tg && tg.showAlert) tg.showAlert(msg); else alert(msg); }
 
   /* ---------- screens / nav ---------- */
   const screens = {};
@@ -354,123 +328,20 @@
       showScreen('screen-'+btn.dataset.tab);
       if (btn.dataset.tab==='items') renderItems();
       if (btn.dataset.tab==='perks') renderPerks();
-      if (btn.dataset.tab==='market') renderMarket();
     });
   });
 
   function renderAll(){
-    if (!profile) return;
     document.getElementById('home-tokens').textContent = profile.tokens || 0;
     document.getElementById('home-rank').textContent = Math.max(1, Math.floor((profile.bestMass||0)/50)+1);
     renderItems();
     renderPerks();
   }
 
-  /* ---------- Transfer Skin & Market System ---------- */
-  function transferSkinToUsername(skinId, targetUsername) {
-    if (!profile.inventory.skins || !profile.inventory.skins[skinId]) {
-      notify('شما مالک این اسکین نیستید.');
-      return;
-    }
-    if (skinId === 'dead_star') {
-      notify('اسکین اولیه قابل انتقال نیست.');
-      return;
-    }
-    const cleanUsername = targetUsername.replace('@','').trim().toLowerCase();
-    
-    db.ref('users').once('value', snap => {
-      const users = snap.val() || {};
-      let targetUid = null;
-      Object.keys(users).forEach(u => {
-        if (users[u].username && users[u].username.toLowerCase() === cleanUsername) {
-          targetUid = u;
-        }
-      });
-
-      if (!targetUid) {
-        notify('کاربری با این آیدی پیدا نشد!');
-        return;
-      }
-      if (targetUid === uid) {
-        notify('نمی‌توانی به خودت اسکین بفرستی!');
-        return;
-      }
-
-      const skinData = profile.inventory.skins[skinId];
-      // Add to target user
-      db.ref(`users/${targetUid}/inventory/skins/${skinId}`).set(skinData);
-      // Remove from current user
-      delete profile.inventory.skins[skinId];
-      if (profile.equippedSkin === skinId) profile.equippedSkin = 'dead_star';
-      saveField('inventory/skins', profile.inventory.skins);
-      saveField('equippedSkin', profile.equippedSkin);
-
-      notify(`اسکین ${SKIN_DB[skinId].name} با موفقیت به @${cleanUsername} منتقل شد! 🎉`);
-      renderItems();
-    });
-  }
-
-  function renderMarket(){
-    const list = document.getElementById('market-list');
-    db.ref('market').on('value', snap => {
-      const data = snap.val() || {};
-      list.innerHTML = '';
-      const items = Object.keys(data);
-      if (items.length === 0) {
-        list.innerHTML = '<div style="text-align:center; color:#8a99ad; margin-top:20px;">هیچ اسکینی برای فروش ثبت نشده است.</div>';
-        return;
-      }
-      items.forEach(itemId => {
-        const item = data[itemId];
-        const skin = SKIN_DB[item.skinId];
-        const card = document.createElement('div');
-        card.className = 'market-item';
-        card.innerHTML = `
-          <div class="market-info">
-            <div class="skin-avatar" style="width:40px;height:40px;background:radial-gradient(circle at 35% 30%, #fff6, ${skin.color})"></div>
-            <div>
-              <div style="font-weight:700;font-size:13px;">${skin.name}</div>
-              <div class="market-seller">فروشنده: @${item.sellerUsername}</div>
-            </div>
-          </div>
-          <button class="lootbox-buy" id="buy-market-${itemId}">🪙 ${item.price}</button>
-        `;
-        list.appendChild(card);
-        document.getElementById(`buy-market-${itemId}`).addEventListener('click', () => buyMarketItem(itemId, item));
-      });
-    });
-  }
-
-  function buyMarketItem(itemId, item) {
-    if ((profile.tokens || 0) < item.price) {
-      notify('توکن کافی نداری!');
-      return;
-    }
-    if (item.sellerUid === uid) {
-      notify('نمی‌توانی اسکین خودت را بخری!');
-      return;
-    }
-
-    db.ref('market/' + itemId).remove();
-    profile.tokens -= item.price;
-    saveField('tokens', profile.tokens);
-
-    // Give tokens to seller
-    db.ref(`users/${item.sellerUid}/tokens`).transaction(cur => (cur || 0) + item.price);
-
-    // Give skin to buyer
-    profile.inventory.skins[item.skinId] = { tag: item.rarity };
-    saveField('inventory/skins/' + item.skinId, { tag: item.rarity });
-
-    notify(`تبریک! اسکین ${SKIN_DB[item.skinId].name} خریده شد.`);
-    renderMarket();
-    renderItems();
-  }
-
   /* ---------- game mode picker ---------- */
   const MODES = [
-    { id:'online', emoji:'🌐', name:'آنلاین واقعی', sub:'بازی همزمان با بقیه', enabled:true },
-    { id:'ai', emoji:'🤖', name:'هوش مصنوعی', sub:'۱۰ ربات حریف', enabled:true }
+    { id:'ai', emoji:'🤖', name:'هوش مصنوعی', sub:'۱۰ ربات حریف', enabled:true },
+    { id:'classic', emoji:'🌍', name:'کلاسیک', sub:'به زودی', enabled:false },
   ];
   let modeIdx = 0;
   function renderMode(){
@@ -503,38 +374,11 @@
         <div class="skin-tag ${TAG_CLASS[tag]||'tag-common'}">${TAG_LABEL[tag]||tag}</div>
         ${!owned ? '<div class="lock-overlay">🔒</div>' : ''}
       `;
-      if (owned) {
-        card.addEventListener('click', ()=>{
-          const action = prompt(`اسکین ${skin.name}:\n1. استفاده کردن (عدد 1)\n2. ارسال به دوست با تلگرام (عدد 2)\n3. فروش در مارکت (عدد 3)`);
-          if (action === '1') {
-            profile.equippedSkin = id;
-            saveField('equippedSkin', id);
-            renderItems();
-          } else if (action === '2') {
-            const target = prompt('آیدی تلگرام یا یوزرنیم کاربر مقصد را وارد کنید (بدون @):');
-            if (target) transferSkinToUsername(id, target);
-          } else if (action === '3') {
-            if (id === 'dead_star') { notify('اسکین پایه قابل فروش نیست.'); return; }
-            const price = parseInt(prompt('قیمت فروش به توکن را وارد کنید:'));
-            if (price && price > 0) {
-              const marketRef = db.ref('market').push();
-              marketRef.set({
-                skinId: id,
-                price: price,
-                sellerUid: uid,
-                sellerUsername: telegramUsername,
-                rarity: tag
-              });
-              delete profile.inventory.skins[id];
-              if (profile.equippedSkin === id) profile.equippedSkin = 'dead_star';
-              saveField('inventory/skins', profile.inventory.skins);
-              saveField('equippedSkin', profile.equippedSkin);
-              notify('اسکین برای فروش در مارکت ثبت شد.');
-              renderItems();
-            }
-          }
-        });
-      }
+      if (owned) card.addEventListener('click', ()=>{
+        profile.equippedSkin = id;
+        saveField('equippedSkin', id);
+        renderItems();
+      });
       grid.appendChild(card);
     });
 
@@ -558,6 +402,8 @@
     const skinId = pool[Math.floor(Math.random()*pool.length)];
     return { skinId, rarity: chosenRarity };
   }
+
+  function notify(msg){ if (tg && tg.showAlert) tg.showAlert(msg); else alert(msg); }
 
   document.getElementById('lootbox-buy-btn').addEventListener('click', ()=>{
     if (!profile) return;
@@ -646,9 +492,6 @@
   const BASE_SPLIT_COOLDOWN = 5;
 
   let pieces, bots, pellets, camScale, running, lastT, splitCooldownLeft, maxMassReached;
-  let remotePlayers = {};
-  let myRoomRef = null;
-  let lastSyncTime = 0;
 
   function radiusFromMass(m){ return 8 + Math.sqrt(m)*3.1; }
   function baseSpeedFromRadius(r){ return Math.max(46, 320/(1+r/34)); }
@@ -656,20 +499,7 @@
   function splitCooldownMax(){ return Math.max(0, BASE_SPLIT_COOLDOWN - (profile.perks.splitCooldownLevel||0)*0.1); }
 
   function randPos(){ return { x:40+Math.random()*(WORLD-80), y:40+Math.random()*(WORLD-80) }; }
-  
-  function generateFixedPellets(){
-    const list = [];
-    for(let i=0; i<PELLET_COUNT; i++){
-      list.push({
-        x: (i * 137) % (WORLD - 80) + 40,
-        y: (i * 243) % (WORLD - 80) + 40,
-        r: 5 + (i % 3),
-        color: `hsl(${(i * 50) % 360}, 80%, 60%)`
-      });
-    }
-    return list;
-  }
-
+  function makePellet(){ const p=randPos(); return {x:p.x,y:p.y,r:5+Math.random()*3,color:`hsl(${Math.floor(Math.random()*360)},80%,60%)`}; }
   function makeBot(idx, awayFrom){
     let pos; do { pos = randPos(); } while (awayFrom && Math.hypot(pos.x-awayFrom.x,pos.y-awayFrom.y) < 500);
     return { name:'AI '+idx, x:pos.x, y:pos.y, mass:14+Math.random()*14, color:BOT_COLORS[idx%BOT_COLORS.length],
@@ -678,31 +508,9 @@
 
   function startGame(){
     fitCanvas();
-    const isOnline = MODES[modeIdx].id === 'online';
-    const skinColor = (SKIN_DB[profile.equippedSkin]||SKIN_DB.dead_star).color;
-
-    pieces = [ { x:400 + Math.random()*(WORLD-800), y:400 + Math.random()*(WORLD-800), mass:22, dispR:radiusFromMass(22), boostT:0, boostX:0, boostY:0, mergeAt:0 } ];
-    
-    if (isOnline) {
-      bots = [];
-      myRoomRef = db.ref('live_room/' + uid);
-      myRoomRef.set({
-        name: profile.name || displayName,
-        color: skinColor,
-        pieces: pieces.map(p => ({ x: Math.round(p.x), y: Math.round(p.y), mass: Math.round(p.mass) }))
-      });
-      myRoomRef.onDisconnect().remove();
-
-      db.ref('live_room').on('value', snap => {
-        const data = snap.val() || {};
-        delete data[uid];
-        remotePlayers = data;
-      });
-    } else {
-      bots = []; for (let i=1;i<=BOT_COUNT;i++) bots.push(makeBot(i, pieces[0]));
-    }
-
-    pellets = generateFixedPellets();
+    pieces = [ { x:WORLD/2, y:WORLD/2, mass:22, dispR:radiusFromMass(22), boostT:0, boostX:0, boostY:0, mergeAt:0 } ];
+    bots = []; for (let i=1;i<=BOT_COUNT;i++) bots.push(makeBot(i, pieces[0]));
+    pellets = []; for (let i=0;i<PELLET_COUNT;i++) pellets.push(makePellet());
     camScale = 1; running = true; lastT = null; splitCooldownLeft = 0; maxMassReached = 22;
     showScreen('screen-game'); bottomnav.style.display='none';
     requestAnimationFrame(loop);
@@ -774,10 +582,10 @@
       clampWorld(p);
       for (let i=pellets.length-1;i>=0;i--){
         const pel = pellets[i]; const d = Math.hypot(pel.x-p.x, pel.y-p.y);
-        if (d < p.dispR) { p.mass += 1.1; }
+        if (d < p.dispR) { p.mass += 1.1; pellets[i] = makePellet(); }
       }
     }
-    
+    // merge own pieces if lock expired and overlapping
     const now = performance.now();
     for (let i=pieces.length-1;i>0;i--){
       for (let j=i-1;j>=0;j--){
@@ -815,7 +623,7 @@
     const spd = baseSpeedFromRadius(bot.dispR);
     bot.x += dir.x*spd*dt; bot.y += dir.y*spd*dt; clampWorld(bot);
     for (let i=pellets.length-1;i>=0;i--){ const p=pellets[i]; const d=Math.hypot(p.x-bot.x,p.y-bot.y);
-      if (d<bot.dispR){ bot.mass+=1.1; } }
+      if (d<bot.dispR){ bot.mass+=1.1; pellets[i]=makePellet(); } }
     if (bot.mass>60) bot.mass *= (1-0.0015*dt);
   }
 
@@ -831,37 +639,10 @@
         else if (bot.mass > piece.mass*1.15) { pieces.splice(pi,1); if (pieces.length===0) { endGame(); return; } }
       }
     }
-
-    if (MODES[modeIdx].id === 'online') {
-      Object.keys(remotePlayers).forEach(rUid => {
-        const rPlayer = remotePlayers[rUid];
-        if (!rPlayer || !rPlayer.pieces) return;
-
-        rPlayer.pieces.forEach(rPiece => {
-          const rR = radiusFromMass(rPiece.mass);
-          for (let pi=pieces.length-1; pi>=0; pi--) {
-            const myPiece = pieces[pi];
-            const d = Math.hypot(myPiece.x - rPiece.x, myPiece.y - rPiece.y);
-            const overlap = d < Math.max(myPiece.dispR, rR) - Math.min(myPiece.dispR, rR)*0.35;
-            if (overlap) {
-              if (rPiece.mass > myPiece.mass * 1.15) {
-                pieces.splice(pi, 1);
-                if (pieces.length === 0) { endGame(); return; }
-              } else if (myPiece.mass > rPiece.mass * 1.15) {
-                myPiece.mass += rPiece.mass * 0.5;
-              }
-            }
-          }
-        });
-      });
-    }
   }
 
   function endGame(){
     running = false;
-    if (myRoomRef) myRoomRef.remove();
-    db.ref('live_room').off();
-
     const finalMass = Math.round(maxMassReached);
     const earnedTokens = Math.floor(finalMass/5);
     profile.tokens = (profile.tokens||0) + earnedTokens;
@@ -876,14 +657,7 @@
     bottomnav.style.display='flex';
     showScreen('screen-over');
   }
-
-  document.getElementById('back-btn').addEventListener('click', ()=>{ 
-    running=false; 
-    if (myRoomRef) myRoomRef.remove();
-    db.ref('live_room').off();
-    bottomnav.style.display='flex'; 
-    showScreen('screen-home'); 
-  });
+  document.getElementById('back-btn').addEventListener('click', ()=>{ running=false; bottomnav.style.display='flex'; showScreen('screen-home'); });
   document.getElementById('retry-btn').addEventListener('click', startGame);
   document.getElementById('menu-btn').addEventListener('click', ()=>showScreen('screen-home'));
 
@@ -912,28 +686,19 @@
     });
 
     function drawCircle(e, color, isPlayer, name){
-      const s=worldToScreen(e.x,e.y,camX,camY,camScale); const rr=(e.dispR || radiusFromMass(e.mass))*camScale;
+      const s=worldToScreen(e.x,e.y,camX,camY,camScale); const rr=e.dispR*camScale;
       const grad = ctx.createRadialGradient(s.x-rr*0.3,s.y-rr*0.3,rr*0.1,s.x,s.y,rr);
-      grad.addColorStop(0, isPlayer?'#8fd0ff':'#ffffff55'); grad.addColorStop(1, color || '#ff5c5c');
+      grad.addColorStop(0, isPlayer?'#8fd0ff':'#ffffff55'); grad.addColorStop(1, color);
       ctx.fillStyle=grad; ctx.beginPath(); ctx.arc(s.x,s.y,rr,0,Math.PI*2); ctx.fill();
       ctx.strokeStyle='rgba(255,255,255,0.25)'; ctx.lineWidth=2; ctx.stroke();
       if (name) { ctx.fillStyle='#fff'; ctx.font=`${Math.max(11,12*camScale)}px sans-serif`; ctx.textAlign='center'; ctx.fillText(name, s.x, s.y+4); }
     }
 
     bots.forEach(b=>drawCircle(b, b.color, false, b.name));
-
-    if (MODES[modeIdx].id === 'online') {
-      Object.keys(remotePlayers).forEach(rUid => {
-        const rp = remotePlayers[rUid];
-        if (rp && rp.pieces) {
-          rp.pieces.forEach(p => drawCircle(p, rp.color, false, rp.name));
-        }
-      });
-    }
-
     const equippedColor = (SKIN_DB[profile.equippedSkin]||SKIN_DB.dead_star).color;
-    pieces.forEach(p=>drawCircle(p, equippedColor, true, displayName));
+    pieces.forEach(p=>drawCircle(p, equippedColor, true, null));
 
+    // split cooldown UI
     splitBtn.disabled = totalM < SPLIT_MIN_MASS || pieces.length>=MAX_PIECES || splitCooldownLeft>0;
     splitBtn.textContent = splitCooldownLeft>0 ? Math.ceil(splitCooldownLeft)+'s' : 'تقسیم';
   }
@@ -943,14 +708,6 @@
     if (!lastT) lastT=t; const dt=Math.min(0.05,(t-lastT)/1000); lastT=t;
     updatePieces(dt); bots.forEach(b=>updateBot(b,dt)); checkCollisions();
     if (!running) return;
-
-    if (MODES[modeIdx].id === 'online' && myRoomRef && t - lastSyncTime > 40) {
-      myRoomRef.update({
-        pieces: pieces.map(p => ({ x: Math.round(p.x), y: Math.round(p.y), mass: Math.round(p.mass) }))
-      });
-      lastSyncTime = t;
-    }
-
     if (splitCooldownLeft>0) splitCooldownLeft=Math.max(0,splitCooldownLeft-dt);
     const tm = totalMass(); if (tm>maxMassReached) maxMassReached=tm;
     document.getElementById('hud-mass').textContent = Math.round(tm);
